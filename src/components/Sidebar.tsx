@@ -24,21 +24,19 @@ function Sidebar() {
     <>
       {resized < 640 ? (
         <div
-          className={
-            click
-              ? "flex bg-blue-500 md:col-start-1 md:col-end-2 border-2"
-              : "hidden"
-          }
+          className={` justify-center items-center bg-amber-300 text-white ${
+            click ? `flex` : `hidden`
+          }`}
         >
-          Sidebar Hidden
+          sidebar mibile display
         </div>
       ) : (
         <div
-          className={`flex justify-center items-center ${
-            click ? "flex" : "hidden"
+          className={`justify-center items-center bg-blue-400 ${
+            !click ? `flex` : ` hidden`
           }`}
         >
-          Sidebar Display
+          sidebar desktop display
         </div>
       )}
     </>
@@ -46,3 +44,22 @@ function Sidebar() {
 }
 
 export default Sidebar;
+// {resized < 640 ? (
+//   <div
+//     className={
+//       click
+//         ? "flex bg-blue-500 md:col-start-1 md:col-end-2 border-2"
+//         : "hidden"
+//     }
+//   >
+//     Sidebar Hidden
+//   </div>
+// ) : (
+//   <div
+//     className={`flex justify-center items-center ${
+//       click ? "flex" : "hidden"
+//     }`}
+//   >
+//     Sidebar Display
+//   </div>
+// )}
