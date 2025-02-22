@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useClick } from "../store/useClick";
-
+import SidebarC from "./SidebarC";
 function Sidebar() {
   const click = useClick((state) => state.click);
-  const setClick = useClick((state) => state.setClick);
   const [resized, setResized] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -22,21 +21,25 @@ function Sidebar() {
 
   return (
     <>
-      {resized < 640 ? (
+      {resized < 768 ? (
         <div
-          className={` justify-center items-center bg-amber-300 text-white ${
-            click ? `flex` : `hidden`
+          className={` bg-amber-300  ${
+            click
+              ? `flex  justify-center items-center  col-start-1 col-end-2 row-start-1 row-end-1`
+              : `hidden`
           }`}
         >
-          sidebar mibile display
+          <SidebarC />
         </div>
       ) : (
         <div
-          className={`justify-center items-center bg-blue-400 ${
-            !click ? `flex` : ` hidden`
+          className={` ${
+            !click
+              ? `flex justify-center items-center   col-start-1 col-end-2 row-start-1 row-end-1 bg-blue-400`
+              : ` hidden`
           }`}
         >
-          sidebar desktop display
+          <SidebarC />
         </div>
       )}
     </>
