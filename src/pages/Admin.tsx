@@ -1,9 +1,9 @@
 import React from "react";
-
+import Navbar from "../components/Navbar";
 function Admin() {
   return (
     <div>
-      <h1>hello wolrd from admin</h1>
+      <Navbar />
     </div>
   );
 }
