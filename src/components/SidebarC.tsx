@@ -1,14 +1,13 @@
 import React from "react";
-
+import SidebarHeader from "./SidebarHeader";
+import SidebarContent from "./SidebarContent";
+import SidebarFooter from "./SidebarFooter";
 function SidebarC() {
   return (
-    <div>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, sequi
-        corporis? Explicabo, mollitia reiciendis autem libero a quia facilis
-        aliquid iusto, numquam, iste alias? Laborum tenetur excepturi harum
-        fugiat perspiciatis?
-      </h1>
+    <div className="bg-gray-400 grid-rows-10 grid-col-1 gap-2 border-2 ">
+      <SidebarHeader />
+      <SidebarContent />
+      <SidebarFooter />
     </div>
   );
 }
