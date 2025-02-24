@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Admin from "./pages/Admin";
 import Sidebar from "./components/Sidebar";
 import { useClick } from "./store/useClick";
@@ -14,7 +14,7 @@ function App() {
         className={
           !click
             ? `col-start-1 col-end-7 row-start-1 row-end-1 md:col-start-2 md:col-end-7 md:row-start-1 md:row-end-1 overflow-y-scroll  `
-            : `col-start-2 col-end-7 row-start-1 row-end-1 md:col-start-1 md:col-end-7 md:row-start-1 md:row-end-1 overflow-y-scroll   `
+            : `col-start-1 col-end-7 row-start-1 row-end-1 md:col-start-1 md:col-end-7 md:row-start-1 md:row-end-1 overflow-y-scroll   `
         }
       >
         <Routes>
