@@ -2,7 +2,12 @@ import React from "react";
 
 function SidebarContent() {
   return (
-    <div>
+    <div className="">
+      <h1>SidebarContent</h1>
+      <h1>SidebarContent</h1>
+      <h1>SidebarContent</h1>
+      <h1>SidebarContent</h1>
+      <h1>SidebarContent</h1>
       <h1>SidebarContent</h1>
     </div>
   );
