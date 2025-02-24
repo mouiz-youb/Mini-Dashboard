@@ -1,14 +1,13 @@
 import React from "react";
-
+import SideLine from "./SideLine";
 function SidebarContent() {
   return (
     <div className="">
-      <h1>SidebarContent</h1>
-      <h1>SidebarContent</h1>
-      <h1>SidebarContent</h1>
-      <h1>SidebarContent</h1>
-      <h1>SidebarContent</h1>
-      <h1>SidebarContent</h1>
+      <SideLine />
+      <SideLine />
+      <SideLine />
+      <SideLine />
+      <SideLine />
     </div>
   );
 }
