@@ -26,7 +26,7 @@ function Sidebar() {
         <div
           className={`${
             click
-              ? `flex  justify-center items-center bg-white z-10 h-screen border-2 ${
+              ? `flex  justify-center items-center bg-white z-10 h-screen shadow-xl ${
                   resized <= 768 ? `absolute top-0 left-0 -z-10 w-1/2` : ``
                 }  md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-1   `
               : `hidden`
@@ -38,7 +38,7 @@ function Sidebar() {
         <div
           className={` ${
             !click
-              ? `flex justify-center items-center   h-screen border-2 ${
+              ? `flex justify-center items-center   h-screen shadow-xl ${
                   resized <= 768 ? `absolute top-0 left-0  w-1/2` : ``
                 }  md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-1    `
               : ` hidden`

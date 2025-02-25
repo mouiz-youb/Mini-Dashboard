@@ -9,7 +9,7 @@ function Navbar() {
 
   console.log(click);
   return (
-    <div className="flex justify-between items-center flex-row gap-2 w-full pt-2 pb-2 pl-4 pr-4 border-2 text-sm   ">
+    <div className="flex justify-between items-center flex-row gap-2 w-full pt-2 pb-2 pl-4 pr-4  text-sm    ">
       <div onClick={() => setClick()} className="cursor-pointer z-20">
         Campany Name
       </div>

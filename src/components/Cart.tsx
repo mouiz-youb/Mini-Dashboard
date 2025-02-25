@@ -24,7 +24,7 @@ const Cart: React.FC<CartProps> = ({ text, back }) => {
           <p className="text-sm">CARD HOLDER</p>
           <p className="text-sm">VALID THRU</p>
         </div>
-        <div className="flex justify-center  items-center flex-col   ">
+        <div className="flex justify-center  items-center flex-col  text-sm  ">
           <p>Eddy Cusuma</p>
           <p>12/22</p>
         </div>
