@@ -9,13 +9,13 @@ const SidebarFooter: React.FC = () => {
         title="Log out "
         link="/"
         icon={<IoIosLogOut />}
-        classname="shadow-2xl rounded-2xl p-2 "
+        classname="bg-purple-400 text-white hover:bg-white hover:text-purple-400 hover:shadow rounded-2xl p-2 "
       />
       <SideLine
         title="Log out "
         link="/"
         icon={<IoIosLogIn />}
-        classname="shadow-2xl rounded-2xl p-2 "
+        classname="bg-purple-400 text-white hover:bg-white hover:text-purple-400 hover:shadow rounded-2xl p-2 "
       />
     </div>
   );
