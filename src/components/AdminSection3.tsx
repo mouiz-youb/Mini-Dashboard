@@ -1,5 +1,6 @@
 import React from "react";
 import AiEngent from "./AiEngent";
+import Chart3 from "./Chat3";
 
 function AdminSection3() {
   return (
@@ -7,7 +8,9 @@ function AdminSection3() {
       <div className="flex justify-center items-center flex-col md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-1">
         <AiEngent />
       </div>
-      <div className="flex justify-center items-center flex-col md:col-start-3 md:col-end-6 md:row-start-1 md:row-end-1 border-2"></div>
+      <div className="flex justify-center items-center flex-col md:col-start-3 md:col-end-6 md:row-start-1 md:row-end-1  ">
+        <Chart3/>
+      </div>
     </div>
   );
 }
