@@ -1,6 +1,5 @@
 import React, { use } from "react";
 import { useClick } from "../store/useClick";
-import { Calendar } from "@mantine/dates";
 import { IoSettings } from "react-icons/io5";
 import Profile from "./Profile";
 function Navbar() {
