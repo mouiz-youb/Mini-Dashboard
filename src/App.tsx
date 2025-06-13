@@ -5,6 +5,8 @@ import Admin from "./pages/Admin";
 import Sidebar from "./components/Sidebar";
 import { useClick } from "./store/useClick";
 import "./App.css";
+import Testing from "./pages/Testing";
+// import Test from "./pages/Test";
 function App() {
   const click = useClick((state) => state.click);
   return (
@@ -19,6 +21,7 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<Admin />} />
+          <Route path="test" element={<Testing/>}/>
         </Routes>
       </div>
     </div>
@@ -29,7 +32,9 @@ export default App;
 // `col-start-1 col-end-5 row-start-1 row-end-1 bg-red-200`
 // `gap-5 border-2  col-start-2 col-end-5 row-start-1 row-end-1 bg-blue-200 `
 // {
-//   !click
-//     ? `col-start-1 col-end-5 row-start-1 row-end-1 `
-//     : `col-start-1 col-end-5 row-start-1 row-end-1   bg-red-200`
-// }
+
+
+
+
+
+
